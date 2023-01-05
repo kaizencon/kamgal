@@ -2,6 +2,7 @@
 	// @ts-nocheck
 
 	import SimpleGallery from './SimpleGallery.svelte';
+	import Buttons from './buttons.svelte'
 
 	const images = [
 		{
@@ -21,8 +22,15 @@
 			thumbnailURL: 'https://cdn.photoswipe.com/photoswipe-demo-images/photos/3/img-200.jpg',
 			width: 2500,
 			height: 1666
+		},
+		{
+			largeURL: '/a.jpg',
+			thumbnailURL: '/a.jpg',
+			width: 2500,
+			height: 1666
 		}
 	];
 </script>
 
 <SimpleGallery galleryID="my-test-gallery" {images} />
+<Buttons />
